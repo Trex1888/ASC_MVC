@@ -1,0 +1,21 @@
+﻿@model Location
+
+@using (Html.BeginForm("Create", "Home", FormMethod.Post))
+{
+    <div>
+        <label for="LOCATION_NAME">Location Name:</label>
+        @Html.TextBoxFor(m => m.LOCATION_NAME)
+    </div>
+    <div>
+        <label for="LOCATION_ID">Location ID:</label>
+        @Html.TextBoxFor(m => m.LOCATION_ID)
+    </div>
+    <div>
+        <label for="IS_CLEARANCE">Is Clearance:</label>
+        @Html.CheckBoxFor(m => m.IS_CLEARANCE)
+    </div>
+    <div>
+        <input type="submit" value="Add Location" />
+    </div>
+}
+
